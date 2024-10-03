@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+class Check leap year
+{
+    public static void main(String []args)
+    {
+        String yr = JOptionPane.showInputDialog(null,"Enter a year:");
+        int year = Integer.parseInt(yr);
+        System.out.println(year);
+        if(year%4==0 && year%100 !=0)
+            System.out.println("Leap year");
+        else if(year%400==0)
+            System.out.println("Leap year");
+        else
+        System.out.println("Not a Leap year");
+
+    }
+}
